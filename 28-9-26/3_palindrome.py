@@ -4,6 +4,7 @@ num=int(input("Enter a number: "))
 sum=0
 n=num
 while(n>0):
-    sum=sum+(num%10)
+    sum=sum*10+(n%10)
     n=n//10
-print(sum)
+if (num==sum):
+    print("Pallindrome")
